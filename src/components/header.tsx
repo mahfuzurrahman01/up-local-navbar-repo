@@ -18,13 +18,13 @@ const Header = () => {
                     menuState ? <RxCross2 className='text-2xl font-light text-gray-700' /> : <HiOutlineMenu className='text-2xl font-light text-gray-700' />
                 }
             </div>
-            <div className={`w-[25%] bg-gray-100 p-2 rounded-md absolute top-9 right-3 ${!menuState && 'hidden'} duration-300 lg:hidden block `}>
-                <ul>
-                    <li className='hover:text-amber-400 text-gray-700 text-right border-b border-gray-500'>Home</li> 
-                    <li className='hover:text-amber-400 text-gray-700 text-right border-b border-gray-500'>About</li> 
-                    <li className='hover:text-amber-400 text-gray-700 text-right border-b border-gray-500'>Services</li> 
-                    <li className='hover:text-amber-400 text-gray-700 text-right border-b border-gray-500'>Blog</li> 
-                    <li className='hover:text-amber-400 text-gray-700 text-right border-b border-gray-500'>Contact</li> 
+            <div className={`sticky top-0 w-[100%] min-h-screen bg-gray-100 p-2 rounded-md absolute top-9 right-0 ${!menuState && 'hidden'} duration-300 lg:hidden block `}>
+                <ul className='gap-2 flex justify-center items-center flex-col bg-gray-700 min-h-screen sticky top-0 w-full'>
+                    <li className='hover:text-amber-400 text-gray-50 text-2xl font-semibold hover:bg-white p-1 rounded-md'>Home</li> 
+                    <li className='hover:text-amber-400 text-gray-50 text-2xl font-semibold hover:bg-white p-1 rounded-md'>About</li> 
+                    <li className='hover:text-amber-400 text-gray-50 text-2xl font-semibold hover:bg-white p-1 rounded-md'>Services</li> 
+                    <li className='hover:text-amber-400 text-gray-50 text-2xl font-semibold hover:bg-white p-1 rounded-md'>Blog</li> 
+                    <li className='hover:text-amber-400 text-gray-50 text-2xl font-semibold hover:bg-white p-1 rounded-md'>Contact</li> 
                 </ul>
             </div>
         </div>
